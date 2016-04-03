@@ -1,0 +1,245 @@
+{
+	"files": [
+		{
+			"name": "bg2",
+			"type": "image",
+			"original_width": 768,
+			"original_height": 1280,
+			"files": [
+				"bg2.jpg"
+			]
+		},
+		{
+			"name": "LuckiestGuy",
+			"type": "font",
+			"files": [
+				"LuckiestGuy.ttf"
+			]
+		},
+		{
+			"name": "roboto",
+			"type": "font",
+			"files": [
+				"roboto.ttf"
+			]
+		},
+		{
+			"name": "bg",
+			"type": "image",
+			"original_width": 544,
+			"original_height": 650,
+			"files": [
+				"bg.jpg"
+			]
+		},
+		{
+			"name": "block",
+			"type": "image",
+			"original_width": 128,
+			"original_height": 128,
+			"files": [
+				"block.png"
+			]
+		},
+		{
+			"name": "block2",
+			"type": "image",
+			"original_width": 180,
+			"original_height": 180,
+			"files": [
+				"block2.png"
+			]
+		},
+		{
+			"name": "gear",
+			"type": "image",
+			"original_width": 512,
+			"original_height": 512,
+			"files": [
+				"gear.png"
+			]
+		},
+		{
+			"name": "mute",
+			"type": "image",
+			"original_width": 128,
+			"original_height": 128,
+			"files": [
+				"mute.png"
+			]
+		},
+		{
+			"name": "playblock",
+			"type": "image",
+			"original_width": 200,
+			"original_height": 100,
+			"files": [
+				"playblock.png"
+			]
+		},
+		{
+			"name": "quit",
+			"type": "image",
+			"original_width": 128,
+			"original_height": 128,
+			"files": [
+				"quit.png"
+			]
+		},
+		{
+			"name": "settings",
+			"type": "image",
+			"original_width": 32,
+			"original_height": 32,
+			"files": [
+				"settings.png"
+			]
+		},
+		{
+			"name": "shuffle",
+			"type": "image",
+			"original_width": 128,
+			"original_height": 128,
+			"files": [
+				"shuffle.png"
+			]
+		},
+		{
+			"name": "wood",
+			"type": "image",
+			"original_width": 600,
+			"original_height": 600,
+			"files": [
+				"wood.jpg"
+			]
+		},
+		{
+			"name": "zombie",
+			"type": "image",
+			"original_width": 260,
+			"original_height": 285,
+			"files": [
+				"zombie.png"
+			]
+		},
+		{
+			"name": "music_goes_here_txt",
+			"type": "blob",
+			"files": [
+				"music-goes-here.txt"
+			]
+		},
+		{
+			"name": "slideMusic_mp3",
+			"type": "blob",
+			"files": [
+				"slideMusic.mp3"
+			]
+		},
+		{
+			"name": "slideMusic_ogg",
+			"type": "blob",
+			"files": [
+				"slideMusic.ogg"
+			]
+		},
+		{
+			"name": "click",
+			"type": "sound",
+			"files": [
+				"click.ogg"
+			]
+		},
+		{
+			"name": "click2_ogg",
+			"type": "blob",
+			"files": [
+				"click2.ogg"
+			]
+		},
+		{
+			"name": "move",
+			"type": "sound",
+			"files": [
+				"move.ogg"
+			]
+		},
+		{
+			"name": "pause",
+			"type": "sound",
+			"files": [
+				"pause.ogg"
+			]
+		},
+		{
+			"name": "sounds_go_here_txt",
+			"type": "blob",
+			"files": [
+				"sounds-go-here.txt"
+			]
+		},
+		{
+			"name": "success_ogg",
+			"type": "blob",
+			"files": [
+				"success.ogg"
+			]
+		},
+		{
+			"name": "painter_colored_frag",
+			"files": [
+				"painter-colored.frag.essl"
+			],
+			"type": "shader"
+		},
+		{
+			"name": "painter_colored_vert",
+			"files": [
+				"painter-colored.vert.essl"
+			],
+			"type": "shader"
+		},
+		{
+			"name": "painter_image_frag",
+			"files": [
+				"painter-image.frag.essl"
+			],
+			"type": "shader"
+		},
+		{
+			"name": "painter_image_vert",
+			"files": [
+				"painter-image.vert.essl"
+			],
+			"type": "shader"
+		},
+		{
+			"name": "painter_text_frag",
+			"files": [
+				"painter-text.frag.essl"
+			],
+			"type": "shader"
+		},
+		{
+			"name": "painter_text_vert",
+			"files": [
+				"painter-text.vert.essl"
+			],
+			"type": "shader"
+		},
+		{
+			"name": "painter_video_frag",
+			"files": [
+				"painter-video.frag.essl"
+			],
+			"type": "shader"
+		},
+		{
+			"name": "painter_video_vert",
+			"files": [
+				"painter-video.vert.essl"
+			],
+			"type": "shader"
+		}
+	]
+}
