@@ -12,6 +12,8 @@ class Group {
 
 	public var length(get, null):Int;
 
+	public var members(get, null):Array<Block>;
+
 	public function new(X:Int = 0, Y:Int = 0):Void
 	{
 	    this.x = X;
@@ -24,6 +26,11 @@ class Group {
 			block.x += this.x;
 			block.y += this.y;
 		}
+	}
+
+	public function getBlock(index:Int):Block
+	{
+		return group[index]; 
 	}
 
 	public function render(gfx:Graphics):Void
@@ -48,9 +55,15 @@ class Group {
 	     this.update();
 	}
 
+
 	// GROUP FUNCTIONS
 	private inline function get_length():Int
 	{
 		return group.length;
+	}
+
+	private inline function get_members():Array<Block>
+	{
+		return members;
 	}
 }

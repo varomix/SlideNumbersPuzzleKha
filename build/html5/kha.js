@@ -37,8 +37,8 @@ Block.prototype = {
 	,onMouseDown: function(mouseButton,mouseX,mouseY) {
 		if(mouseButton == 0) {
 			if(mouseX >= this.x && mouseX <= this.x + this.width && mouseY >= this.y && mouseY <= this.y + this.height) {
-				tweenx909_TweenX.to(this,{ y : this.y + 180},null,null,null,null,null,null,null,null,{ fileName : "Block.hx", lineNumber : 55, className : "Block", methodName : "onMouseDown"}).time(this.moveSpeed).ease(tweenx909_EaseX.quadInOut);
-				haxe_Log.trace("it tickles",{ fileName : "Block.hx", lineNumber : 56, className : "Block", methodName : "onMouseDown"});
+				tweenx909_TweenX.to(this,{ y : this.y + 180},null,null,null,null,null,null,null,null,{ fileName : "Block.hx", lineNumber : 52, className : "Block", methodName : "onMouseDown"}).time(this.moveSpeed).ease(tweenx909_EaseX.quadInOut);
+				haxe_Log.trace("it tickles",{ fileName : "Block.hx", lineNumber : 53, className : "Block", methodName : "onMouseDown"});
 			}
 		}
 	}
@@ -77,6 +77,7 @@ Group.prototype = {
 	,y: null
 	,group: null
 	,length: null
+	,members: null
 	,update: function() {
 		var _g = 0;
 		var _g1 = this.group;
@@ -86,6 +87,9 @@ Group.prototype = {
 			block.x += this.x;
 			block.y += this.y;
 		}
+	}
+	,getBlock: function(index) {
+		return this.group[index];
 	}
 	,render: function(gfx) {
 		var _g = 0;
@@ -109,8 +113,11 @@ Group.prototype = {
 	,get_length: function() {
 		return this.group.length;
 	}
+	,get_members: function() {
+		return this.members;
+	}
 	,__class__: Group
-	,__properties__: {get_length:"get_length"}
+	,__properties__: {get_members:"get_members",get_length:"get_length"}
 };
 var HxOverrides = function() { };
 $hxClasses["HxOverrides"] = HxOverrides;
@@ -324,8 +331,15 @@ Puzzle.prototype = {
 		this.blocksGrp.render(g);
 		g.end();
 	}
+	,btn: null
 	,onMouseDown: function(button,x,y) {
-		this.blk.onMouseDown(button,x,y);
+		var _g1 = 0;
+		var _g = this.blocksGrp.group.length;
+		while(_g1 < _g) {
+			var i = _g1++;
+			this.btn = this.blocksGrp.getBlock(i);
+			this.btn.onMouseDown(button,x,y);
+		}
 	}
 	,__class__: Puzzle
 };

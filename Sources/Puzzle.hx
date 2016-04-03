@@ -47,6 +47,7 @@ class Puzzle {
 
 		createBoard();
 		blocksGrp.setPosition(24, 188);
+
 		// listen for mouse events
 		Mouse.get().notify(onMouseDown, null, null, null);
 	}
@@ -90,8 +91,13 @@ class Puzzle {
 		g.end();		
 	}
 
+	var btn:Block;
 	public function onMouseDown(button:Int, x:Int, y:Int):Void
 	{
-		blk.onMouseDown(button, x, y);
+		// trace(blocksGrp.length);
+		for (i in 0 ... blocksGrp.length) {
+			btn = blocksGrp.getBlock(i);
+			btn.onMouseDown(button, x, y);
+		}
 	}
 }
